@@ -1,8 +1,8 @@
 name: Issue due-date labels
 on:
   schedule:
-    - cron: '0 * * * *'   # hourly
-  workflow_dispatch:       # or run it manually
+    - cron: '0 12 * * *'   # daily
+  workflow_dispatch:       # run it manually
 
 jobs:
   label:
@@ -13,4 +13,13 @@ jobs:
     steps:
       - uses: alexleventer/github-issue-due-dates-action@v2
         with:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          upcoming-labels: |
+            - days: 1
+              label: 'Due tomorrow!'
+            - days: 3
+              label: 'Due in 3 days'
+            - days: 7
+              label: 'Due in 1 week'
+          comment-on-upcoming: 'Heads up: this issue is due in {{daysUntil}} days ({{dueDate}}).'
+          comment-on-overdue: 'This task is overdue. Get it taken care of please!'
