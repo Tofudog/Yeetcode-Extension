@@ -1,0 +1,16 @@
+name: Issue due-date labels
+on:
+  schedule:
+    - cron: '0 * * * *'   # hourly
+  workflow_dispatch:       # or run it manually
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - uses: alexleventer/github-issue-due-dates-action@v2
+        with:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
