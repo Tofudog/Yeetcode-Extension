@@ -8,11 +8,12 @@ The following steps are meant for development. The real chrome extension **will*
 
 1. Download and navigate to this repository code: `git clone https://github.com/Tofudog/Yeetcode-Extension.git`
 2. Install [Node and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-3. Run `npm run build`. You should see a `build/` directory
-4. Open up a Google Chrome browser and search up chrome://extensions/
-5. Enable developer mode in the top-right
-6. Press **Load unpacked** and select `build/`
-7. Enjoy the extension!
+3. Run `npm install` to get all the necessary dependencies
+4. Run `npm run build`. You should see a `build/` directory
+5. Open up a Google Chrome browser and search up chrome://extensions/
+6. Enable developer mode in the top-right
+7. Press **Load unpacked** and select `build/`
+8. Enjoy the extension!
 
 ### Testing
 Since syntax and formatting errors are only modestly important, we opted for speed over accuracy. Hence, we are using [Oxlint](https://betterstack.com/community/guides/scaling-nodejs/oxlint-vs-eslint/)
