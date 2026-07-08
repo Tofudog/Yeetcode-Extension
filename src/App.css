@@ -30,3 +30,16 @@
   width: 32px;
   height: auto;
 }
+
+.form-divider {
+  border: none;
+  border-top: 4px solid white;
+  margin: 0;
+}
+
+.button-navbottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 25px;
+}

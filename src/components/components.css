@@ -28,3 +28,13 @@
   padding-top: 15px;
   padding-bottom: 10px;
 }
+
+.custom-button {
+  background-color: #f5ad5a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 32px;
+  cursor: pointer;
+  border-radius: 20px;
+}

@@ -1,5 +1,6 @@
 import "./App.css";
 import JsonForm from "./components/JsonForm";
+import CustomButton from "./components/CustomButton";
 
 function App() {
   return (
@@ -14,7 +15,11 @@ function App() {
         <div className="json-form">
           <JsonForm></JsonForm>
         </div>
-        <div className="button-navbottom"></div>
+        <hr className="form-divider" />
+        <div className="button-navbottom">
+          <CustomButton label="Login" />
+          <CustomButton label="Sign Up" />
+        </div>
       </div>
     </>
   );
