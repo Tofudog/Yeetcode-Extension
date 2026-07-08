@@ -1,4 +1,5 @@
 import "./App.css";
+import JsonForm from "./components/JsonForm";
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
           </p>
           <img id="logo" src="/favicon.svg" alt="Yeetcode logo" />
         </div>
-        <div className="json-form"></div>
+        <div className="json-form">
+          <JsonForm></JsonForm>
+        </div>
         <div className="button-navbottom"></div>
       </div>
     </>

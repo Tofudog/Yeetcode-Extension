@@ -1,0 +1,30 @@
+.json-container {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.json-container h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+.field-input {
+  height: 30px;
+  width: 110px;
+  color: black;
+  background-color: white;
+  vertical-align: middle;
+}
+
+.side-by-side-mapping {
+  display: flex;
+  align-items: center;
+}
+
+.tab {
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
