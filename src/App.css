@@ -1,0 +1,32 @@
+/* login, signup, profile, etc. */
+.black-box {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 2px;
+
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 40px;
+}
+
+/* filname with extension and logo */
+.top-of-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#filename {
+  text-align: left;
+  padding: 25px;
+  margin: 0;
+}
+
+#logo {
+  padding: 25px;
+  width: 32px;
+  height: auto;
+}
