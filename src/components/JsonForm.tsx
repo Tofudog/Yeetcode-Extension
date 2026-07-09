@@ -1,17 +1,17 @@
 import "./components.css";
 
-function JsonForm() {
-  const fields = [
-    ["ID", "input", ""],
-    ["PW", "input", ""],
-  ];
-  const formType = "login"; //eventually make it allow other types
+type JsonFormProps = {
+  fields: string[][];
+  formType: string;
+};
+
+function JsonForm({ fields, formType }: JsonFormProps) {
   return (
     <>
       <div className="json-container">
         <h1>&#123;</h1>
         {fields.map((field) => (
-          <div className="side-by-side-mapping">
+          <div key={field[0]} className="side-by-side-mapping">
             <h1 className="tab">&quot;{field[0]}&quot; : &nbsp;</h1>
             <h1>
               &quot;{" "}

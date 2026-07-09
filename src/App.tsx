@@ -3,6 +3,11 @@ import JsonForm from "./components/JsonForm";
 import CustomButton from "./components/CustomButton";
 
 function App() {
+  const fields = [
+    ["ID", "input", ""],
+    ["PW", "input", ""],
+  ];
+  const formType = "login";
   return (
     <>
       <div className="black-box">
@@ -13,7 +18,7 @@ function App() {
           <img id="logo" src="/favicon.svg" alt="Yeetcode logo" />
         </div>
         <div className="json-form">
-          <JsonForm></JsonForm>
+          <JsonForm fields={fields} formType={formType}></JsonForm>
         </div>
         <hr className="form-divider" />
         <div className="button-navbottom">
