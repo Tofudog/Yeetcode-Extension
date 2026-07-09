@@ -1,0 +1,52 @@
+.json-container {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.json-container h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+.field-input {
+  height: 30px;
+  width: 80px;
+  color: black;
+  background-color: white;
+  vertical-align: middle;
+  @media (min-width: 400px) {
+    width: 110px;
+  }
+  @media (min-width: 480px) {
+    width: 150px;
+  }
+  @media (min-width: 525px) {
+    width: 180px;
+  }
+  @media (min-width: 600px) {
+    width: 300px;
+  }
+}
+
+.side-by-side-mapping {
+  display: flex;
+  align-items: center;
+}
+
+.tab {
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.custom-button {
+  background-color: #f5ad5a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 32px;
+  cursor: pointer;
+  border-radius: 20px;
+}
